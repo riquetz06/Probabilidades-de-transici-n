@@ -17,7 +17,7 @@ rowSums(transition_matrix)
 # Crear una matriz de transición
 Warning message:
 package ‘markovchain’ was built under R version 4.3.3 
-> transition_matrix <- matrix(c(0.7, 0.2, 0.1,
+transition_matrix <- matrix(c(0.7, 0.2, 0.1,
 +                               0.3, 0.4, 0.3,
 +                               0.2, 0.3, 0.5),
 +                             nrow = 3, byrow = TRUE)
@@ -30,8 +30,8 @@ print(transition_matrix)
 Estado1     0.7     0.2     0.1
 Estado2     0.3     0.4     0.3
 Estado3     0.2     0.3     0.5
-> # Verificar si cada fila suma 1 (propiedad de probabilidad de transición)
-> rowSums(transition_matrix)
+# Verificar si cada fila suma 1 (propiedad de probabilidad de transición)
+rowSums(transition_matrix)
 Estado1 Estado2 Estado3 
       1       1       1 
 # Estado inicial (por ejemplo, empezando en Estado1)
